@@ -1,1 +1,23 @@
 // Mixins in here
+
+.button-mixin (@color, @size, @color2, @radius, @color3){
+	color: @color;
+	font-size: @size;
+	border: 1px solid @color2;
+	border-radius: @radius;
+	background-color: @color3;
+	padding: 10px 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.hover (@fromColor, @toColor){
+	animation-name: colorAnim;
+	animation-duration: 2s;
+	font-weight: bold;
+
+	@keyframes colorAnim {
+		from {background-color: @fromColor;}
+		to {background-color: @toColor;}
+	}
+}
