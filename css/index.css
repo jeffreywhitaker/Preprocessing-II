@@ -187,6 +187,12 @@ nav {
   padding: 20px 0;
   border-bottom: 2px dashed black;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 nav div {
   display: flex;
 }
@@ -216,6 +222,11 @@ nav div a:hover {
 .home header {
   border-bottom: 2px dashed black;
 }
+@media (max-width: 500px) {
+  .home header {
+    margin: 0 20px;
+  }
+}
 .home header img {
   margin-bottom: 15px;
 }
@@ -225,13 +236,29 @@ nav div a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 80%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 80%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -239,6 +266,11 @@ nav div a:hover {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -261,9 +293,20 @@ nav div a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn {
   color: white;
