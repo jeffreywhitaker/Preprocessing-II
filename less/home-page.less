@@ -1,9 +1,10 @@
 .home {
 
   header {
-    border-bottom: 2px dashed black;
+    border-bottom: 2px dashed @dividerColor;
+    margin: auto;
     @media @tablet {
-      margin: 0 20px;
+      width: 80%;
     }
     img {
       margin-bottom: 15px;
@@ -87,7 +88,7 @@
         width: 80%;
       }
       .btn {
-        .button-mixin(white, 1.6rem, black, 25px, cyan);
+        .button-mixin(white, 1.6rem, black, 12px, #17a2b8);
       }
     }
   }

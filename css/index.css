@@ -1,16 +1,3 @@
-.hover {
-  animation-name: button;
-  animation-duration: 2s;
-  font-weight: bold;
-}
-@keyframes button {
-  from {
-    background-color: white;
-  }
-  to {
-    background-color: hotpink;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -184,8 +171,8 @@ img {
 nav {
   display: flex;
   justify-content: space-around;
-  padding: 20px 0;
-  border-bottom: 2px dashed black;
+  padding: 10px 0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 @media (max-width: 500px) {
   nav {
@@ -195,18 +182,26 @@ nav {
 }
 nav div {
   display: flex;
+  align-items: center;
 }
 nav div a {
   text-decoration: none;
   color: black;
   padding: 20px 15px;
-  margin: 10 15px;
   font-size: 1.6rem;
 }
 nav div a:hover {
-  animation-name: button;
+  animation-name: colorAnim;
   animation-duration: 2s;
   font-weight: bold;
+}
+@keyframes colorAnim {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #17A2B8;
+  }
 }
 .footer {
   width: 100%;
@@ -220,11 +215,12 @@ nav div a:hover {
   padding: 20px;
 }
 .home header {
-  border-bottom: 2px dashed black;
+  border-bottom: 2px dashed #c0c0c0;
+  margin: auto;
 }
 @media (max-width: 500px) {
   .home header {
-    margin: 0 20px;
+    width: 80%;
   }
 }
 .home header img {
@@ -312,8 +308,8 @@ nav div a:hover {
   color: white;
   font-size: 1.6rem;
   border: 1px solid black;
-  border-radius: 25px;
-  background-color: cyan;
+  border-radius: 12px;
+  background-color: #17a2b8;
   padding: 10px 15px;
   display: flex;
   justify-content: center;

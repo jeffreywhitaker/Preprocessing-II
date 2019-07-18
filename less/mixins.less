@@ -11,13 +11,13 @@
 	justify-content: center;
 }
 
-.hover {
-	animation-name: button;
+.hover (@fromColor, @toColor){
+	animation-name: colorAnim;
 	animation-duration: 2s;
 	font-weight: bold;
-}
 
-@keyframes button {
-	from {background-color: white;}
-	to {background-color: hotpink;}
+	@keyframes colorAnim {
+		from {background-color: @fromColor;}
+		to {background-color: @toColor;}
+	}
 }
