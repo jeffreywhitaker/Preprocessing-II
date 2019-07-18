@@ -1,3 +1,23 @@
+.flexbox-property {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  padding: 10px auto;
+  border-bottom: 1px solid red;
+}
+.hover {
+  animation-name: button;
+  animation-duration: 2s;
+  font-weight: bold;
+}
+@keyframes button {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: hotpink;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -170,7 +190,24 @@ img {
 }
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-bottom: 2px dashed black;
+}
+nav div {
+  display: flex;
+}
+nav div a {
+  text-decoration: none;
+  color: black;
+  padding: 20px 15px;
+  margin: 10 15px;
+  font-size: 1.6rem;
+}
+nav div a:hover {
+  animation-name: button;
+  animation-duration: 2s;
+  font-weight: bold;
 }
 .footer {
   width: 100%;
