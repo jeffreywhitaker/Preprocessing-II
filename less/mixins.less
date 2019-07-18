@@ -1,11 +1,14 @@
 // Mixins in here
 
-.flexbox-property {
+.button-mixin (@color, @size, @color2, @radius, @color3){
+	color: @color;
+	font-size: @size;
+	border: 1px solid @color2;
+	border-radius: @radius;
+	background-color: @color3;
+	padding: 10px 15px;
 	display: flex;
-	justify-content: space-around; 
-	margin: 10px auto;
-	padding: 10px auto;
-	border-bottom: 1px solid red;
+	justify-content: center;
 }
 
 .hover {
