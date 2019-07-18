@@ -1,1 +1,20 @@
 // Mixins in here
+
+.flexbox-property {
+	display: flex;
+	justify-content: space-around; 
+	margin: 10px auto;
+	padding: 10px auto;
+	border-bottom: 1px solid @font-color-main;
+}
+
+.hover {
+	animation-name: button;
+	animation-duration: 2s;
+	font-weight: bold;
+}
+
+@keyframes button {
+	from {background-color: white;}
+	to {background-color: hotpink;}
+}
